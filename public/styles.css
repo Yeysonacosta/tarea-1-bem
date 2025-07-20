@@ -1,0 +1,259 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+
+  padding: 0;
+  background: #f0f0f0;
+  color: #333;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f0f0, #b1cfe4 ,white);
+  color: #333333;
+}
+
+
+
+/* Encabezado */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #dfd6d6, #f8aeae, #e2e0e0);
+  padding: 20px;
+  color: rgb(5, 5, 5);
+  position: relative;
+
+}
+
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+  display: flex;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+nav li a {
+  text-decoration: none;
+  color: rgb(13, 14, 13);
+  display: block;
+  padding: 10px;
+  margin: auto;
+  
+}
+/* Secciones */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+section h2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 1s forwards;
+  border: #1b8559;
+}
+/* Sobre mi */
+#sobre-mi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sobre-mi h2 {
+  margin-bottom: 20px;
+}
+#sobre-mi h3 {
+  margin-bottom: 40px;
+} 
+#sobre-mi p {
+  margin-bottom: 40px;
+} 
+#sobre-mi img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+}
+
+
+
+/* Proyectos */
+.proyecto {
+  background: rgb(196, 248, 194);
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 5px solid #d7e4e7;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+}
+.proyecto:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  background-color: #f9fcff;
+}
+.proyecto, form, button, #sobre-mi img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+
+.contacto {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #1278ee, #dee6eb);
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 32px;
+  color: #00bfff;
+  margin-bottom: 30px;
+}
+
+
+
+
+/*gaelria */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.galeria img {
+  width: 30px%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background: #00ccff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
+.footer {
+  padding: 60px 40px;
+  background-color: #e6f0fa;
+  color: #333;
+}
+
+.footer h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #00ccff;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skill img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.skill p {
+  flex: 1;
+}
+
+.skill h3 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.skill progress {
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+  margin-bottom: 8px;
+}
+
+.skill progress::-webkit-progress-bar {
+  height: 100%;
+  background-color: #00ccff;
+}
+/*reponsibilidad*/
+@media (max-width: 768px) {
+  .sobre {
+    flex-direction: column;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .seccion__titulo {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
